@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compactible" content="IE=edge">
+<meta name="vlewport" content="width=device-width, innitial-scale=1.0">
+<tittle></tittle>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/b4c00d9d9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+     <div class="container">
+<nav>
+
+    <img src="Wen Creatives o Background copy.png" class="logo">
+    <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact Us</a></li>
+    
+    </ul>
+
+</nav>
+        
+<div class="header-text">
+
+    <p> UI/UX Designer </p> 
+    <h1> Building Creative, Powerful Websites That work <spa></spa><br>for You</h1>
+
+</div>
+
+</div>
+
+</div>
+
+<!-----------------About----------------->
+
+<div id="about">
+       <div class="container">
+
+          <div class="row">
+             <div class="about-col-1">
+                     <img src="christina-wocintechchat-com-QCgAK6uHZm8-unsplash.jpg"">
+                     
+             </div>
+             <div class="about-col-2">
+                <h1 class="sub-tittle">About Us</h1>
+                <p>This website is created to serve you. <br>Please use it with ease. <br>Ask any question 
+                    if there is any and <br> it will be answered immediatelly.
+                </p>
+
+
+                <div class="tab-tittles">
+
+                    <p class="tab-links active link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')"> Education</p>
+             </div>
+
+             
+             <div class="tab-contents active-tab" id="skills">
+                     <ul>
+                        <li><span>UI/UX</span><br> Web/App interfaces</li>
+                        <li><span>Web Development</span><br>App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS apps</li>
+                     </ul>
+
+
+          </div>
+
+          <div class="tab-contents" id="Experience">
+            <ul>
+               <li><span>UI/UX</span><br> Web/App interfaces</li>
+               <li><span>Web Development</span><br>App Development</li>
+               <li><span>App Development</span><br>Building Android/IOS apps</li>
+            </ul>
+
+ </div>
+
+ <div class="tab-contents" id="Education">
+    <ul>
+       <li><span>UI/UX</span><br> Web/App interfaces</li>
+       <li><span>Web Development</span><br>App Development</li>
+       <li><span>App Development</span><br>Building Android/IOS apps</li>
+    </ul>
+
+
+</div>
+
+       </div>
+
+</div>
+
+<!-----------------Services----------------->
+
+<div id="services">
+
+       <div class="container">
+                 
+         <h1 class="sub-tittle">My Services</h1>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+               <h2>Web Design</h2>
+               <p>Get you own website today. It is free to create but you are just required that the designer has the bills to pay. Thanks.</p>
+               <a href="#">Learn More</a>
+            </div>
+
+            <div>
+               <i class="fa-brands fa-app-store"></i>
+               <h2>App Design</h2>
+               <p>Get you own website today. It is free to create but you are just required that the designer has the bills to pay. Thanks.</p>
+               <a href="#">Learn More</a>
+            </div>
+
+            <div>
+               <i class="fa-solid fa-crop"></i>
+               <h2>UI/UX</h2>
+               <p>Get you own website today. It is free to create but you are just required that the designer has the bills to pay. Thanks.</p>
+               <a href="#">Learn More</a>
+            </div>
+
+
+         </div>
+
+       </div>
+
+</div>
+
+
+<!-----------------Portfolio----------------->
+
+<div id="portfolio">
+         <div class="container"> 
+            <h1 class="sub-tittle">My Work</h1>
+
+             <div class="work-list">
+
+                  <div class="Work">
+                     <img src="pexels-screenpost-4526429.jpg"> 
+                  </div>
+
+                  <div class="work">
+                     <div class="Work">
+                        <img src="pexels-czapp-arpad-3647289-16738220.jpg">
+                     </div>
+               
+                     <div class="work">
+                        <div class="Work">
+                           <img src="pexels-screenpost-4526428.jpg">
+                        </div>
+                     
+             </div>
+
+         </div>
+
+</div>
+
+         <script>
+
+                  var tablinks = document.getElementsByClassName("tab-links");
+                  var tabcontents = document.getElementsByClassName("tab-contents");
+
+                  function opentab(tabname){
+                         for(tablink of tablinks){
+                            tablink.classList.remove("active-link")
+                         }
+                         for(tabcontent of tabcontents){
+                            tabcontent.classList.remove("active-tab")
+                         }
+                  }
+                  event.currentTarget.classList.add("active-link");
+                  document.getElementById(tabname).classList.add("active-tab")
+                 
+         </script>
+
+</body>
+
+
+</html>
